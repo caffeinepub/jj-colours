@@ -1,0 +1,105 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T10:32:43.243Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 4,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Generate and display realistic, accurate logo images for all four authorized paint brands — Asian Paints, Berger Paints, Birla Opus Paints, and Dulux Paints — in the Partners section. Each logo should closely resemble the real brand identity (correct wordmark style, brand colours, and distinctive visual elements). Serve the logos as static assets from frontend/public/assets/generated and reference them in the Partners component.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Partners.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Partners.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Redesign the entire website colour scheme from navy blue/white to a black and gold combination. Update all CSS custom properties in frontend/src/index.css and Tailwind config tokens to use deep black (e.g., #0A0A0A, #111111) as the primary background, rich gold/amber (e.g., #C9A84C, #D4AF37, #F0C040) as the accent colour, and off-white/cream (#F5F5F0) for text and light surfaces. Ensure every component — Navbar, Hero, Services, About, WhyChooseUs, Partners, Contact, Footer — consistently reflects the new black and gold palette, including backgrounds, text colours, button styles, card borders, icon fills, badge colours, and hover/focus states.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Services.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/WhyChooseUs.tsx",
+          "frontend/src/components/Partners.tsx",
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Services.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/WhyChooseUs.tsx",
+          "frontend/src/components/Partners.tsx",
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Update the Why Choose Us / Stats section to display 25 years of experience as the experience stat.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/WhyChooseUs.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/WhyChooseUs.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Add real contact details throughout the website. In the Contact section, About section, and Footer: display email yashwant.shinde.3262@gmail.com, mobile number 9822625581, and proprietor name Yashwant Shinde.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/Footer.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/asian-paints-logo.dim_300x150.png",
+    "frontend/public/assets/generated/berger-paints-logo.dim_300x150.png",
+    "frontend/public/assets/generated/birla-opus-logo.dim_300x150.png",
+    "frontend/public/assets/generated/dulux-paints-logo.dim_300x150.png",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/Partners.tsx",
+    "frontend/src/components/Services.tsx",
+    "frontend/src/components/WhyChooseUs.tsx",
+    "frontend/src/index.css",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global styles with a black and gold OKLCH color system — deep black primary, rich gold accent, cream/off-white backgrounds — replacing the previous navy blue palette; includes Google Fonts, smooth scroll, and all utility/component classes updated to black & gold tokens.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with gold-tinted shadow tokens replacing navy shadows, retaining custom font families, border radius, and animation keyframes aligned to the black & gold theme.",
+  "frontend/src/App.tsx": "Root application component that composes all page sections (Navbar, Hero, Services, About, WhyChooseUs, Partners, Contact, Footer) as a single-page layout with anchor IDs.",
+  "frontend/src/components/Navbar.tsx": "Sticky navigation bar with a deep black background, white/gold text links with gold hover states, gold CTA button, and black-themed mobile menu.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with a deep black gradient overlay, gold accent badge and headline highlight, gold primary CTA button, and updated trust stats showing 25+ years experience with gold numbers.",
+  "frontend/src/components/Services.tsx": "Services section with six cards using gold icon accents on hover, gold \"Most Popular\" badge, and gold accent underline on hover — all on light card backgrounds with the black & gold theme.",
+  "frontend/src/components/About.tsx": "About Us section with a gold floating years badge showing 25+, gold CheckCircle icons, proprietor card for Yashwant Shinde, and updated highlights referencing 25 years of experience.",
+  "frontend/src/components/WhyChooseUs.tsx": "Deep black section background with gold stat numbers (25+ years), gold icon accents, and gold-bordered reason cards replacing the previous navy/white styling.",
+  "frontend/src/components/Partners.tsx": "Authorized Applicators section displaying all four brand logos (Asian, Berger, Birla Opus, Dulux) on white logo containers with gold \"Authorized Applicator\" badges and gold border hover effects; uses correct dulux-paints-logo filename.",
+  "frontend/src/components/Contact.tsx": "Contact/quote section with real contact details (phone 9822625581, email yashwant.shinde.3262@gmail.com, proprietor Yashwant Shinde), gold icon accents, gold submit button, and gold form focus rings.",
+  "frontend/src/components/Footer.tsx": "Multi-column footer with deep black background, gold column headings, real contact details (phone/email as clickable links), proprietor Yashwant Shinde card, gold link hover states, and caffeine.ai attribution."
+}

@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (logo display, black/gold redesign, stats update, etc.) to their source files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON dictionary providing one-line descriptions of each frontend source file, summarizing their role in the black-and-gold themed JJ Colours website.",
+  "frontend/index.css": "Base Tailwind CSS entry file defining OKLCH CSS custom properties for light and dark themes covering background, foreground, accent, border, and sidebar tokens.",
+  "frontend/index.html": "Minimal HTML shell for the JJ Colours React app, mounting the app at the root div and loading the TypeScript entry point.",
+  "frontend/src/App.tsx": "Root React component that assembles all page sections (Navbar, Hero, Services, About, WhyChooseUs, Partners, Contact, Footer) into a single-page layout with anchor IDs.",
+  "frontend/src/components/About.tsx": "About Us section highlighting 25+ years of experience, authorized brand partnerships, a proprietor card for Yashwant Shinde, and a gold-accented feature checklist.",
+  "frontend/src/components/Contact.tsx": "Contact and quote request section with a form (name, phone, service, message), real contact details for Yashwant Shinde, and gold-styled UI elements.",
+  "frontend/src/components/Footer.tsx": "Multi-column footer with deep black background, gold headings, quick links, services list, partner brands, clickable contact info, proprietor card, and a caffeine.ai attribution.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section for JJ Colours with a background image, gradient overlays, headline, CTA buttons, and trust stats (years, projects, partners).",
+  "frontend/src/components/Navbar.tsx": "Fixed top navigation bar with scroll-aware styling, smooth-scroll nav links, a logo with fallback, and a responsive mobile menu toggle.",
+  "frontend/src/components/Partners.tsx": "Displays a grid of four authorized paint brand partners (Asian Paints, Berger, Birla Opus, Dulux) with logos, descriptions, and an authorized applicator badge.",
+  "frontend/src/components/Services.tsx": "Renders a six-card grid of JJ Colours' services (interior/exterior painting, design, textures, waterproofing, consultation) with icons and a 'Most Popular' badge on the first item.",
+  "frontend/src/components/WhyChooseUs.tsx": "Dark-themed section showcasing four animated stat cards and four reason cards explaining JJ Colours' value proposition (experience, quality, pricing, certifications).",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that creates and caches an ICP backend actor via React Query, using the current Internet Identity and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and hook for Internet Identity authentication on the ICP platform, managing login state, identity persistence, and AuthClient lifecycle.",
+  "frontend/src/index.css": "Global stylesheet defining a black-and-gold OKLCH CSS variable palette (light/dark modes), Tailwind base/components/utilities imports, and reusable utility classes for the JJ Colours brand.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with OKLCH-based brand colors, custom fonts (Playfair Display, Inter), box shadows, border radii, and animation keyframes for the JJ Colours site.",
+  "project_state.json": "Project state manifest describing the JJ Colours professional website, its existing features, architectural notes, known issues, and image requirements for paint brand logos."
+}

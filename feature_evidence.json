@@ -1,0 +1,88 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-generate-and-display-realistic-accurate-logo-images-for-all-four-authorized-paint-brands-asian-paints-berger-paints-birla-opus-paints-and-dulux-paints-in-the-partners-section-each-logo-should-closely-resemble-the-real-brand-identity-correct-wordmark-style-brand-colours-and-distinctive-visual-elements-serve-the-logos-as-static-assets-from-frontend-public-assets-generated-and-reference-them-in-the-partners-component",
+      "featureTitle": "Generate and display realistic, accurate logo images for all four authorized paint brands — Asian Paints, Berger Paints, Birla Opus Paints, and Dulux Paints — in the Partners section. Each logo should closely resemble the real brand identity (correct wordmark style, brand colours, and distinctive visual elements). Serve the logos as static assets from frontend/public/assets/generated and reference them in the Partners component.",
+      "files": [
+        "frontend/src/components/Partners.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-redesign-the-entire-website-colour-scheme-from-navy-blue-white-to-a-black-and-gold-combination-update-all-css-custom-properties-in-frontend-src-index-css-and-tailwind-config-tokens-to-use-deep-black-e-g-0a0a0a-111111-as-the-primary-background-rich-gold-amber-e-g-c9a84c-d4af37-f0c040-as-the-accent-colour-and-off-white-cream-f5f5f0-for-text-and-light-surfaces-ensure-every-component-navbar-hero-services-about-whychooseus-partners-contact-footer-consistently-reflects-the-new-black-and-gold-palette-including-backgrounds-text-colours-button-styles-card-borders-icon-fills-badge-colours-and-hover-focus-states",
+      "featureTitle": "Redesign the entire website colour scheme from navy blue/white to a black and gold combination. Update all CSS custom properties in frontend/src/index.css and Tailwind config tokens to use deep black (e.g., #0A0A0A, #111111) as the primary background, rich gold/amber (e.g., #C9A84C, #D4AF37, #F0C040) as the accent colour, and off-white/cream (#F5F5F0) for text and light surfaces. Ensure every component — Navbar, Hero, Services, About, WhyChooseUs, Partners, Contact, Footer — consistently reflects the new black and gold palette, including backgrounds, text colours, button styles, card borders, icon fills, badge colours, and hover/focus states.",
+      "files": [
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/components/Partners.tsx",
+        "frontend/src/components/Services.tsx",
+        "frontend/src/components/WhyChooseUs.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-why-choose-us-stats-section-to-display-25-years-of-experience-as-the-experience-stat",
+      "featureTitle": "Update the Why Choose Us / Stats section to display 25 years of experience as the experience stat.",
+      "files": [
+        "frontend/src/components/WhyChooseUs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-real-contact-details-throughout-the-website-in-the-contact-section-about-section-and-footer-display-email-yashwant-shinde-3262-gmail-com-mobile-number-9822625581-and-proprietor-name-yashwant-shinde",
+      "featureTitle": "Add real contact details throughout the website. In the Contact section, About section, and Footer: display email yashwant.shinde.3262@gmail.com, mobile number 9822625581, and proprietor name Yashwant Shinde.",
+      "files": [
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

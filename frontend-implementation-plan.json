@@ -1,0 +1,138 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add official paint brand logos and apply black & gold theme with real contact details",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Generate and display realistic, accurate logo images for all four authorized paint brands in the Partners section",
+      "acceptanceCriteria": [
+        "Asian Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Berger Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Birla Opus Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Dulux Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "All logo images are served from frontend/public/assets/generated",
+        "Each logo is clearly legible and presented with an 'Authorized Applicator' badge"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Partners.tsx",
+          "operation": "modify",
+          "description": "Update the Partners component to display the four generated brand logos. Replace placeholder logo references with the actual generated logo images: frontend/public/assets/generated/asian-paints-logo.dim_300x150.png, frontend/public/assets/generated/berger-paints-logo.dim_300x150.png, frontend/public/assets/generated/birla-opus-logo.dim_300x150.png, and frontend/public/assets/generated/dulux-logo.dim_300x150.png. Ensure each logo is rendered with appropriate alt text, maintains aspect ratio, and is accompanied by the 'Authorized Applicator' badge. Apply the new black and gold theme styling to the partner cards, badges, and logo containers."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Redesign the entire website colour scheme from navy blue/white to a black and gold combination",
+      "acceptanceCriteria": [
+        "All section backgrounds use deep black tones",
+        "All accent elements (buttons, badges, icons, highlights) use gold/amber tones",
+        "All body text uses off-white or cream for readability on dark backgrounds",
+        "Navbar reflects black background with gold accent CTA and links",
+        "Hero section uses black overlay with gold accents on headline and CTA",
+        "Services cards use black/dark card backgrounds with gold icon accents",
+        "WhyChooseUs stats and highlights use gold numbers/accents on dark background",
+        "Partners section uses dark card backgrounds with gold badge borders",
+        "Contact section form fields and buttons use black/gold styling",
+        "Footer uses deep black background with gold accent links"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Replace all OKLCH-based CSS custom properties to implement the black and gold theme. Update --primary to deep black (#0A0A0A or #111111), --accent to rich gold/amber (#C9A84C, #D4AF37, or #F0C040), --background to deep black, --foreground to off-white/cream (#F5F5F0), and --card to a slightly lighter black (#1A1A1A). Ensure all color variables for buttons, borders, inputs, and text support the new black and gold palette. Update both light and dark mode variables to maintain consistency with the black and gold scheme."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update all custom color tokens in the Tailwind configuration to align with the black and gold theme. Replace navy-based primary colors with deep black shades, update accent colors to gold/amber tones, and adjust neutral colors to use black/charcoal backgrounds with cream/off-white text. Ensure the extended theme colors (primary, accent, background, card, etc.) match the CSS custom properties defined in index.css."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Navbar component. Update the background to deep black, navigation links to off-white/cream with gold hover states, and the 'Get a Free Quote' CTA button to use gold background with black text. Adjust the scroll-aware styling to maintain the black background with appropriate opacity. Update the mobile menu to use black background with gold accents."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Hero section. Update the gradient overlay to use deep black tones, headline text to off-white/cream with gold accent highlights, and CTA buttons to gold backgrounds with black text (primary) and black borders with gold text (secondary). Update trust stats to use gold numbers on black backgrounds. Ensure the background image overlay creates sufficient contrast with the new color scheme."
+        },
+        {
+          "path": "frontend/src/components/Services.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Services section. Update service card backgrounds to deep black with subtle borders, card text to off-white/cream, and service icons to gold/amber fills. Apply gold hover effects to cards and ensure all typography remains readable on the dark backgrounds."
+        },
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the About section. Update the section background to deep black, text to off-white/cream, the floating years badge to gold background with black text, CheckCircle2 icon highlights to gold, and the CTA button to gold background with black text. Ensure the painter image has appropriate contrast with the new background."
+        },
+        {
+          "path": "frontend/src/components/WhyChooseUs.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the WhyChooseUs section. Update the section background to deep black, stat numbers to large gold text, stat labels to off-white/cream, reason card backgrounds to slightly lighter black with gold borders, reason icons to gold fills, and reason text to cream. Ensure the stats grid and reasons grid maintain visual hierarchy with the new palette."
+        },
+        {
+          "path": "frontend/src/components/Partners.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Partners section (in addition to logo updates from REQ-12). Update partner card backgrounds to deep black with gold borders, 'Authorized Applicator' badges to gold backgrounds with black text or gold borders, partner descriptions to off-white/cream text, and section title to cream with gold accent. Ensure logo images maintain visibility on the dark card backgrounds."
+        },
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Contact section. Update the section background to deep black, contact detail cards to slightly lighter black with gold icon accents, form field backgrounds to black with gold borders and cream text, form labels to off-white/cream, the submit button to gold background with black text, and success state elements to use gold accents. Ensure all form inputs and text remain readable on dark backgrounds."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Apply black and gold theme to the Footer component. Update the background to deep black, all text to off-white/cream, column headings to gold, navigation and social links to cream with gold hover states, and adjust the logo filter to work on the black background. Ensure the footer maintains clear visual separation from the page content while using the black and gold palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Update the Why Choose Us / Stats section to display 25 years of experience",
+      "acceptanceCriteria": [
+        "The experience stat in the WhyChooseUs/Stats section reads '25+' or '25 Years' of experience",
+        "The label clearly identifies it as years of experience"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WhyChooseUs.tsx",
+          "operation": "modify",
+          "description": "Update the experience stat in the stats array to display '25+' or '25 Years' as the value, with a label such as 'Years of Experience' or 'Years in Business'. Ensure the stat is rendered with the gold number styling applied in REQ-13."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Add real contact details (email, mobile, proprietor name) throughout the website",
+      "acceptanceCriteria": [
+        "Email yashwant.shinde.3262@gmail.com is visible in the Contact section",
+        "Mobile number 9822625581 is visible in the Contact section",
+        "Proprietor name 'Yashwant Shinde' appears in the About section and/or Footer",
+        "Contact details are also present in the Footer",
+        "Email is rendered as a clickable mailto: link",
+        "Phone is rendered as a clickable tel: link"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Update the Contact section to display the real contact details: email yashwant.shinde.3262@gmail.com (as a clickable mailto: link) and mobile number 9822625581 (as a clickable tel: link with formatted display). Add or update contact detail cards to prominently show these details with appropriate icons and the black and gold theme styling."
+        },
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "modify",
+          "description": "Add the proprietor name 'Yashwant Shinde' to the About section. Include it as part of the company introduction or as a founder/proprietor attribution, styled with the off-white/cream text and gold accents from the black and gold theme."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Add the real contact details to the Footer component: email yashwant.shinde.3262@gmail.com (as a clickable mailto: link), mobile number 9822625581 (as a clickable tel: link with formatted display), and proprietor name 'Yashwant Shinde'. Display these in the contact information column with appropriate labels and icons, styled with off-white/cream text and gold hover states."
+        }
+      ]
+    }
+  ]
+}

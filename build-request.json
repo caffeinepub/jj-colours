@@ -1,0 +1,111 @@
+{
+  "kind": "build_request",
+  "title": "Add official paint brand logos and apply black & gold theme with real contact details",
+  "projectName": "JJ Colours",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Generate and display realistic, accurate logo images for all four authorized paint brands — Asian Paints, Berger Paints, Birla Opus Paints, and Dulux Paints — in the Partners section. Each logo should closely resemble the real brand identity (correct wordmark style, brand colours, and distinctive visual elements). Serve the logos as static assets from frontend/public/assets/generated and reference them in the Partners component.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "add orignal asian,berger,birla, & dulux logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Asian Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Berger Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Birla Opus Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "Dulux Paints logo image is displayed in the Partners section, visually resembling the real brand logo",
+        "All logo images are served from frontend/public/assets/generated",
+        "Each logo is clearly legible and presented with an 'Authorized Applicator' badge"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Redesign the entire website colour scheme from navy blue/white to a black and gold combination. Update all CSS custom properties in frontend/src/index.css and Tailwind config tokens to use deep black (e.g., #0A0A0A, #111111) as the primary background, rich gold/amber (e.g., #C9A84C, #D4AF37, #F0C040) as the accent colour, and off-white/cream (#F5F5F0) for text and light surfaces. Ensure every component — Navbar, Hero, Services, About, WhyChooseUs, Partners, Contact, Footer — consistently reflects the new black and gold palette, including backgrounds, text colours, button styles, card borders, icon fills, badge colours, and hover/focus states.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "with black and golden color combo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All section backgrounds use deep black tones",
+        "All accent elements (buttons, badges, icons, highlights) use gold/amber tones",
+        "All body text uses off-white or cream for readability on dark backgrounds",
+        "Navbar reflects black background with gold accent CTA and links",
+        "Hero section uses black overlay with gold accents on headline and CTA",
+        "Services cards use black/dark card backgrounds with gold icon accents",
+        "WhyChooseUs stats and highlights use gold numbers/accents on dark background",
+        "Partners section uses dark card backgrounds with gold badge borders",
+        "Contact section form fields and buttons use black/gold styling",
+        "Footer uses deep black background with gold accent links"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update the Why Choose Us / Stats section to display 25 years of experience as the experience stat.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "25yrs of experience"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The experience stat in the WhyChooseUs/Stats section reads '25+' or '25 Years' of experience",
+        "The label clearly identifies it as years of experience"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Add real contact details throughout the website. In the Contact section, About section, and Footer: display email yashwant.shinde.3262@gmail.com, mobile number 9822625581, and proprietor name Yashwant Shinde.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "add email yashwant.shinde.3262@gmail.com mobile no :9822625581 and proprietor yashwant shinde"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Email yashwant.shinde.3262@gmail.com is visible in the Contact section",
+        "Mobile number 9822625581 is visible in the Contact section",
+        "Proprietor name 'Yashwant Shinde' appears in the About section and/or Footer",
+        "Contact details are also present in the Footer",
+        "Email is rendered as a clickable mailto: link",
+        "Phone is rendered as a clickable tel: link"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "All generated logo images must be served as static assets from frontend/public/assets/generated — do not route through the backend",
+    "Backend (backend/main.mo) requires no changes for this request"
+  ],
+  "nonGoals": [
+    "Fetching or embedding real trademark-protected SVGs from external CDNs",
+    "Any backend data model or canister changes",
+    "Adding new page sections or navigation items beyond what already exists"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Asian Paints brand logo with red and white colour scheme, circular logo mark with 'Asian Paints' wordmark in bold sans-serif (asian-paints-logo.dim_300x150.png)",
+      "Berger Paints brand logo with red diagonal stripe design and 'Berger Paints' wordmark in blue/red sans-serif (berger-paints-logo.dim_300x150.png)",
+      "Birla Opus Paints brand logo with geometric 'Opus' wordmark and Birla group branding in green and gold tones (birla-opus-logo.dim_300x150.png)",
+      "Dulux Paints brand logo with the distinctive rainbow arc/splash design and 'Dulux' wordmark in bold red lettering (dulux-paints-logo.dim_300x150.png)"
+    ],
+    "edits": []
+  }
+}
